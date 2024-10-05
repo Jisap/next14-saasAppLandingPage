@@ -24,19 +24,21 @@ const Button = ({ icon, children, href, containerClassName, onClick, markerFill 
           {children}
         </span>
       </span>
+
+      <span className='glow-before glow-after'/>
     </>
   )
 
   return href ? (
     <a 
-      className={clsx( 'relative, p-0.5 g5 rounded-2xl shadow-500 group', containerClassName )}
+      className={clsx( 'relative p-0.5 g5 rounded-2xl shadow-500 group', containerClassName )}
       href={href}  
     >
       <Inner />
     </a>
   ):(
     <button
-        className={clsx('relative, p-0.5 g5 rounded-2xl shadow-500 group', containerClassName)}
+        className={clsx('relative p-0.5 g5 rounded-2xl shadow-500 group', containerClassName)}
         onClick={onClick}
     >
       <Inner />
