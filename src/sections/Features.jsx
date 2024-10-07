@@ -18,7 +18,8 @@ const Features = () => {
                    max-md:border-s3 max-md:rounded-3xl max-md:flex-320'  
                 >
                   <div className='w-full flex justify-start items-start'>
-                    <div className=''>
+                    <div className='-ml-3 mb-12 flex items-center justify-center flex-col'>
+                      <div className='w-0.5 h-16 bg-s3' />
                       <img 
                         src={icon}
                         alt={title}
@@ -26,6 +27,13 @@ const Features = () => {
                       />
                     </div>
                   </div>
+
+                  <p className='caption mb-5 max-md:mb-6 max-md:h5'>
+                    {caption}
+                  </p>
+                  <h2 className='max-w-400 mb-7 h3 text-p4 max-md:mb-6 max-md:h5'>
+                    {title}
+                  </h2>
                 </div>
               ))
             }
