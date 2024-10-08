@@ -3,13 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link as LinkScroll } from 'react-scroll'
 
 
-const NavLink = ({ title }) => (
-  <LinkScroll
-    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
-  >
-    {title}
-  </LinkScroll>
-)
+
 
 const Header = () => {
 
@@ -23,7 +17,21 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
-  },[])
+  },[]);
+
+  const NavLink = ({ title }) => (
+    <LinkScroll
+      onClick={() => setIsOpen(false)}
+      className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+      to={title}
+      offset={-100}
+      spy
+      smooth
+      activeClass="nav-active"
+    >
+      {title}
+    </LinkScroll>
+  )
 
   return (
     <header className={clsx(
@@ -58,7 +66,7 @@ const Header = () => {
                 <li className='nav-logo'>
                   <LinkScroll
                     to="hero"
-                    offset={-100}
+                    offset={-200}
                     spy
                     smooth
                     className={clsx("max-lg:hidden transition-transform duration-500 cursor-pointer")}
