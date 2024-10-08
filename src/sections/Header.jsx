@@ -27,7 +27,7 @@ const Header = () => {
       offset={-100}
       spy
       smooth
-      activeClass="nav-active"
+      activeClass="nav-active" // Cuando react-scroll detecta que el elemento de destino está visible, se aplica el estilo de clase "nav-active"
     >
       {title}
     </LinkScroll>
