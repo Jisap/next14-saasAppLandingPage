@@ -206,7 +206,7 @@
 
   /* END of Feature */
   /* START of Pricing */
-  
+
   /* before:bg-s4/50 da la base del color */
   /* before:blur-[200px] difumina el contorno del pseudo-elemento */
   /* before:h-96 before:w-13/20 dan la forma y tamaño para que el desenfoque cree un efecto visualmente significativo */
@@ -234,18 +234,24 @@
     @apply pointer-events-none absolute -bottom-16 left-[calc(50%-480px)] z-2 mx-auto w-960;
   }
 
+  /* Aplica un borde redondeado de tamaño 3xl a las esquinas inferior izquierda y superior izquierda del primer elemento. En pantallas grandes (lg),
+  elimina el borde derecho del primer elemento. */
   .pricing-plan_first {
     @apply first:rounded-bl-3xl first:rounded-tl-3xl lg:first:border-r-0;
   }
 
+  /*  Aplica un borde redondeado de tamaño 3xl a las esquinas inferior derecha y superior derecha del último elemento. En pantallas grandes (lg),
+  elimina el borde izquierdo del último elemento.*/
   .pricing-plan_last {
     @apply last:rounded-br-3xl last:rounded-tr-3xl lg:last:border-l-0;
   }
 
+  /* Aplica estilos a los elementos impares */
   .pricing-plan_odd {
     @apply odd:border-s3 odd:bg-s1 lg:odd:mt-12;
   }
 
+  /* Aplica estilos a los elementos pares */
   .pricing-plan_even {
     @apply even:g7 even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
   }
