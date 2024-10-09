@@ -19,7 +19,7 @@ const Pricing = () => {
               Flexible pricing for teams of all sizes
             </h3>
 
-            <div className='relative z-0 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 backdrop-blur-[6px] max-mg:w-[310px]'>
+            <div className='relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 backdrop-blur-[6px] max-mg:w-[310px]'>
               <button 
                 onClick={() => setMonthly(true)}
                 className={clsx(
@@ -46,7 +46,26 @@ const Pricing = () => {
                   !monthly && 'translate-x-full'
                 )}/>
             </div>
+
+            <div className='pricing-bg'>
+              <img 
+                src="/images/bg-outlines.svg"
+                alt="outline"
+                width={960}
+                height={380}
+                className='relative z-2'
+              />
+              <img
+                src="/images/bg-outlines-fill.png"
+                alt="outline"
+                width={960}
+                height={380}
+                className='absolute inset-0 opacity-5 mix-blend-soft-light'
+              />
+            </div>
           </div>
+
+          {/* pricing section */}
         </div>
 
       </Element>
