@@ -81,7 +81,7 @@ const Pricing = () => {
                   <div className="g4 absolute h-330 left-0 right-0 top-0 z-1 rounded-tl-3xl rounded-tr-3xl" />
                 )}
 
-                {/* Imagen de encabezado del plan  */}
+                {/* Imagen de encabezado del plan */}
                 <div
                   className={clsx(
                     "absolute left-0 right-0 z-2 flex items-center justify-center",
