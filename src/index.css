@@ -247,6 +247,7 @@
   }
 
   /* Aplica estilos a los elementos impares */
+  /* lg:odd:mt-12 -> :nth-child(odd) -> selecciona elementos en posiciones impares en el DOM (1º, 3º, 5º...). */
   .pricing-plan_odd {
     @apply odd:border-s3 odd:bg-s1 lg:odd:mt-12;
   }
