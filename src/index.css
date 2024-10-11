@@ -259,6 +259,9 @@
 
   /* END of Pricing */
   /* START of FAQ */
+
+  /*  pseudo-elemento after que se posiciona de manera absoluta ligeramente arriba y centrado horizontalmente dentro de su contenedor,
+   con un pequeño tamaño circular, un borde personalizado, y un color de fondo personalizado. */
   .faq-line_after {
     @apply after:absolute after:-top-1.5 after:left-[calc(50%-5px)] after:z-4 after:size-2.5 after:rounded-half after:border-2 after:border-s2 after:bg-s1 after:content-[''];
   }
