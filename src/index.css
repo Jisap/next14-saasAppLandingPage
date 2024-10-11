@@ -266,6 +266,9 @@
     @apply after:absolute after:-top-1.5 after:left-[calc(50%-5px)] after:z-4 after:size-2.5 after:rounded-half after:border-2 after:border-s2 after:bg-s1 after:content-[''];
   }
 
+  /* pseudo-elemento before de 320x320 píxeles que está centrado horizontalmente y colocado 160 píxeles por encima de su contenedor. 
+  Tiene un color de fondo semitransparente, un modo de mezcla de luz suave para crear un efecto sutil de iluminación,
+  y está desenfocado con un valor alto (200px), lo que da la impresión de un resplandor difuso alrededor del elemento. */
   .faq-glow_before {
     @apply before:absolute before:left-[calc(50%-160px)] before:top-[-160px] before:size-[320px] before:bg-s4/25 before:mix-blend-soft-light before:blur-[200px] before:content-[''];
   }
