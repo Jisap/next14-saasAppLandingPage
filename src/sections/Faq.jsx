@@ -1,7 +1,11 @@
 import React from 'react'
 import { Element } from 'react-scroll'
+import { faq } from '../constants/index'
 
 export const Faq = () => {
+
+  const halfLength = Math.floor(faq.length / 2); // Divide el número de elementos en 2 para obtener la mitad
+
   return (
     <section>
       <Element name="faq" className="relative">
@@ -25,6 +29,14 @@ export const Faq = () => {
                   alt='FAQ logo'
                   className='size-1/2'
                 />
+              </div>
+
+              <div className='relative flex-1 pt-24'>
+                {faq.slice(0, halfLength).map((faq, index) => (
+                  <div>
+                    {faq.question}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
