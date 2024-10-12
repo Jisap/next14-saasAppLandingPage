@@ -7,7 +7,7 @@ const Testimonials = () => {
   const halfLength = Math.floor(testimonials.length / 2); // Divide el número de elementos en 2 para obtener la mitad
 
   return (
-    <section className='relative z-2 py-24 md:py-28 lg:py-40'>
+    <section className='relative z-2 py-24 md:py-28 lg:py-40 border-t-2 border-s2'>
       <div className='container block lg:flex'>
         <div className='testimonials_head-res relative z-2 mr-20 flex-300'>
           <p className='caption mb-5 max-md:mb-2.5'>Wall of Love</p>
