@@ -304,10 +304,14 @@
 
   /* END of Testimonials */
   /*  START of Download*/
+
+  /*  crear una línea decorativa horizontal (::before) que aparece en el último elemento de una lista o grupo. */
   .download_tech-link_last-before {
     @apply last:relative last:before:pointer-events-none last:before:absolute last:before:left-full last:before:top-[calc(50%-1px)] last:before:mr-6 last:before:h-0.5 last:before:w-[140px] last:before:bg-s5 last:before:content-[''] last:before:max-xl:w-[105px] last:before:max-lg:w-[80px] last:before:max-md:hidden;
   }
 
+  /*  crea un pseudo-elemento ::after en el último elemento de una lista o grupo,
+   que aparece como un pequeño círculo con un borde de 2px. */
   .download_tech-link_last-after {
     @apply last:after:pointer-events-none last:after:absolute last:after:left-[223px] last:after:top-[calc(50%-5px)] last:after:z-2 last:after:size-2.5 last:after:rounded-half last:after:border-2 last:after:border-s5 last:after:bg-s1 last:after:content-[''] last:after:max-xl:left-[187px] last:after:max-lg:left-[163px] last:after:max-md:hidden;
   }
@@ -316,6 +320,9 @@
     @apply relative z-2 flex size-full items-center justify-center transition-all duration-500;
   }
 
+  /*  crea un pseudo-elemento ::before que es un círculo colocado dentro del elemento padre, con un pequeño margen interno y 
+  un fondo de color personalizado (s2). Cuando el usuario pasa el ratón sobre el elemento principal (hover),
+  se añade un borde con el color s4, resaltando la interacción visualmente. */
   .download_tech-icon_before {
     @apply before:absolute before:inset-1.5 before:rounded-half before:bg-s2 before:content-[''] hover:border-s4;
   }
@@ -324,10 +331,14 @@
     @apply fill-p1;
   }
 
+  /* genera un pseudo-elemento ::before que aparece como una línea horizontal semitransparente con un gradiente de fondo (g8),
+  ubicada justo por encima del borde superior del elemento padre y desplazada hacia la derecha. */
   .download_preview-before {
     @apply before:g8 before:absolute before:-top-0.5 before:right-6 before:h-0.5 before:w-[63.2%] before:opacity-40 before:content-[''];
   }
 
+  /* genera un pseudo-elemento ::after que aparece como una línea horizontal semitransparente con un gradiente de fondo (g8),
+  ubicada justo por debajo del borde inferior del elemento padre y desplazada hacia la izquierda. */
   .download_preview-after {
     @apply after:g8 after:absolute after:-bottom-0.5 after:left-6 after:h-0.5 after:w-[42.2%] after:opacity-40 after:content-[''];
   }
